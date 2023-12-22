@@ -1,9 +1,17 @@
 package org.example.repository.dao;
 
-import java.util.Optional;
+import org.example.model.Game;
 
-public interface UserRepository {
-    User save(User user);
-    Optional<User> findById(int id);
-    Optional<User> findByNickname(String nickname);
+import java.util.List;
+
+public interface GameRepository {
+    Game get(int id);
+
+    Game save(Game game);
+
+    boolean remove(int id);
+
+    int update(Game game);
+
+    List<Game> findAll();
 }
