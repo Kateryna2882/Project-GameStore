@@ -1,4 +1,8 @@
 package org.example.model;
+import org.example.repository.dao.GameRepositoryImpl;
+import org.example.repository.dao.UserRepository;
+import org.example.repository.dao.UserRepositoryImpl;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
